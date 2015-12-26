@@ -39,9 +39,6 @@ PRODUCT_PACKAGES += \
     lights.geeb
 
 PRODUCT_PACKAGES += \
-        camera.geeb
-
-PRODUCT_PACKAGES += \
     charger_res_images
 
 PRODUCT_COPY_FILES += \
@@ -222,6 +219,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(findstring tiny, $(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
+    camera.geeb \
+    camera.msm8960 \
+    libmmcamera_interface2 \
+    libmmcamera_interface \
     libmm-omxcore \
     libdivxdrmdecrypt \
     libOmxVdec \
