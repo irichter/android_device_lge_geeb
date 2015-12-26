@@ -25,7 +25,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_NO_BOOTLOADER := true
 
 KERNEL_TOOLCHAIN_PREFIX:=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin/arm-eabi-
-TARGET_KERNEL_CONFIG := gee_defconfig	
+TARGET_KERNEL_CONFIG := geeb_defconfig	
 TARGET_KERNEL_SOURCE := kernel/lge/geeb
 
 BOARD_KERNEL_BASE := 0x80200000
