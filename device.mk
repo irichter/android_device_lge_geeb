@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# This file includes all definitions that apply to ALL geehrc devices, and
-# are also specific to geehrc devices
+# This file includes all definitions that apply to ALL geeb devices, and
+# are also specific to geeb devices
 #
 # Everything in this directory will become public
 
@@ -36,7 +36,7 @@ PRODUCT_PACKAGES := \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
-    lights.geehrc
+    lights.geeb
 
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
-    $(LOCAL_PATH)/init.geehrc.wifi.sh:system/bin/init.geehrc.wifi.sh
+    $(LOCAL_PATH)/init.geeb.wifi.sh:system/bin/init.geeb.wifi.sh
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio_policy.conf:system/etc/audio_policy.conf
@@ -60,10 +60,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/initlogo.rle:root/initlogo.rle888 \
     $(LOCAL_PATH)/configs/init.qcom.post_boot.sh:system/bin/init.qcom.post_boot.sh \
     $(LOCAL_PATH)/configs/95-postboot.sh:system/addon.d/95-postboot.sh \
-    $(LOCAL_PATH)/init.geehrc.rc:root/init.geehrc.rc \
-    $(LOCAL_PATH)/init.geehrc.usb.rc:root/init.geehrc.usb.rc \
-    $(LOCAL_PATH)/fstab.geehrc:root/fstab.geehrc \
-    $(LOCAL_PATH)/ueventd.geehrc.rc:root/ueventd.geehrc.rc \
+    $(LOCAL_PATH)/init.geeb.rc:root/init.geeb.rc \
+    $(LOCAL_PATH)/init.geeb.usb.rc:root/init.geeb.usb.rc \
+    $(LOCAL_PATH)/fstab.geeb:root/fstab.geeb \
+    $(LOCAL_PATH)/ueventd.geeb.rc:root/ueventd.geeb.rc \
     $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
     $(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -116,9 +116,9 @@ PRODUCT_PACKAGES += \
     Tag
 
 # OTA package
-PRODUCT_PACKAGES += \
-    OTAUpdates \
-    libbypass
+#PRODUCT_PACKAGES += \
+#    OTAUpdates \
+#    libbypass
 
 # NFCEE access control
 NFCEE_ACCESS_PATH := $(LOCAL_PATH)/nfc/nfcee_access.xml
@@ -162,10 +162,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.delay=0 \
     ring.delay=0 \
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ota.romname=Nitrogen-OS \
-    ro.ota.version=$(shell date +"%Y%m%d") \
-    ro.ota.manifest=http://xyyx.ga/nitrogen-os/nitrogen.xml
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    ro.ota.romname=Nitrogen-OS \
+#    ro.ota.version=$(shell date +"%Y%m%d") \
+#    ro.ota.manifest=http://xyyx.ga/nitrogen-os/nitrogen.xml
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -212,7 +212,7 @@ PRODUCT_PACKAGES += \
     hci_qcomm_init
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.geehrc.bt.sh:system/bin/init.geehrc.bt.sh
+    $(LOCAL_PATH)/init.geeb.bt.sh:system/bin/init.geeb.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bt.hci_transport=smd
