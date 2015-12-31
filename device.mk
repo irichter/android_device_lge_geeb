@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
     lights.geeb
 
 PRODUCT_PACKAGES += \
+    camera.geeb
+
+PRODUCT_PACKAGES += \
     charger_res_images
 
 PRODUCT_COPY_FILES += \
