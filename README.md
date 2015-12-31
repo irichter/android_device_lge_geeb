@@ -19,4 +19,4 @@ Camera  | 8 MP
 Release Date | 2012 November
 
 
-![LG Optimus G E970](http://i.imgur.com/xi0BxDg.jpg "LG Optimus G E970")
+![LG Optimus G GEEB](http://cdn.gsmarena.com/vv/newsimg/12/10/optimus-g-att/gsmarena_001.jpg "LG Optimus G GEEB")
