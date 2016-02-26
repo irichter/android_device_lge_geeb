@@ -120,9 +120,9 @@ PRODUCT_PACKAGES += \
     Tag
 
 # OTA package
-#PRODUCT_PACKAGES += \
-#    OTAUpdates \
-#    libbypass
+PRODUCT_PACKAGES += \
+    OTAUpdates \
+    libbypass
 
 # NFCEE access control
 NFCEE_ACCESS_PATH := $(LOCAL_PATH)/nfc/nfcee_access.xml
@@ -168,12 +168,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.vc_call_vol_steps=20 \
     ro.config.media_vol_steps=20 \
     ro.telephony.call_ring.delay=0 \
-    ring.delay=0 \
+    ring.delay=0
 
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.ota.romname=Nitrogen-OS \
-#    ro.ota.version=$(shell date +"%Y%m%d") \
-#    ro.ota.manifest=http://xyyx.ga/nitrogen-os/nitrogen.xml
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ota.romname=Nitrogen-OS \
+    ro.ota.version=$(shell date +"%Y%m%d") \
+    ro.ota.manifest=http://xyyx.ga/nitrogen-os/geeb/ota.xml
 
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
