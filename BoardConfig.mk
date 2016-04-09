@@ -117,4 +117,21 @@ EXTENDED_FONT_FOOTPRINT := true
 
 MALLOC_IMPL := dlmalloc
 
+#TWRP config
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_SECONDARY_BRIGHTNESS_PATH := /sys/class/leds/button-backlight/brightness
+TW_MAX_BRIGHTNESS := 250
+TW_THEME := portrait_hdpi
+RECOVERY_SDCARD_ON_DATA := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+TW_INCLUDE_JB_CRYPTO := true
+TW_FLASH_FROM_STORAGE := true
+TW_NO_USB_STORAGE := true
+
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+
 -include vendor/lge/geeb/BoardConfigVendor.mk
