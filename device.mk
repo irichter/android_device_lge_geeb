@@ -171,11 +171,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.delay=0 \
     ring.delay=0
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ota.romname=Nitrogen-OS \
-    ro.ota.version=$(shell date +"%Y%m%d") \
-    ro.ota.manifest=http://xyyx-dev.ru/nitrogen-os/geeb/ota.xml
-
 # Do not power down SIM card when modem is sent to Low Power Mode.
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.apm_sim_not_pwdn=1
